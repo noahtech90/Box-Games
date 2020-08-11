@@ -1,12 +1,14 @@
 function openNav() {
     document.getElementById("mySidenav").style.width = "210px";
     document.getElementById("content").classList.add("content")
+    document.getElementById("find-game-btn").classList.add("float-right")
   }
   
   /* Set the width of the side navigation to 0 */
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("content").classList.remove("content")
+    document.getElementById("find-game-btn").classList.remove("float-right")
   }
 
 
