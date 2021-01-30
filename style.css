@@ -14,7 +14,6 @@
   /* The navigation menu links */
   .sidenav a {
     padding: 8px 8px 8px 32px;
-    text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
@@ -38,19 +37,13 @@
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   .content {
     transition: margin-left .5s;
-    margin-left: 200px;
+    margin-left: 10%;
     padding: 10px;
     
   }
   
   #chooseGame, .submit-game {
       color: rgb(89, 158, 64) !important;
-  }
-
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
   }
 
 
@@ -103,4 +96,15 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
-
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-width: 450px) {
+    #mySidenav {
+      position: fixed; /* Stay in place */
+      height: 100px;
+      width: 100%;
+      bottom: 0px; /* Stay at the top */
+      transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+      top: 100; /* Stay at the top */
+      left: 100;
+    }
+  }
